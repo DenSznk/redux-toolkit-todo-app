@@ -1,9 +1,8 @@
 import {useSelector} from 'react-redux'
 import TodoItem from "./TodoItem";
 
-const TodoList = ({removeTodo, toggleTodoComplete}) => {
-
-  const todos = useSelector(state => StaticRange.todos.todos)
+const TodoList = () => {
+  const todos = useSelector(state => state.todos.todos)
 
   return (
     <ul>
